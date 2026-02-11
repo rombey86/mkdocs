@@ -17,5 +17,5 @@ Auf dieser Seite dokumentiere ich praxisnahe Anleitungen, Konfigurationen und "R
 
 **Verbinden Sie sich mit mir:**
 
-*   **LinkedIn:** [Ihr LinkedIn Profil](https://www.linkedin.com/in/your-profile/)
+*   **LinkedIn:** [Ihr LinkedIn Profil](https://www.linkedin.com/in/tobias-rombey-76848048/)
 *   **GitHub:** [Mein GitHub Profil](https://github.com/rombey86/)
