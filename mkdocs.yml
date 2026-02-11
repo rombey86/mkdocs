@@ -33,11 +33,6 @@ theme:
     - content.code.annotate
     # navigation.instant bleibt aus, um JS-Konflikte zu vermeiden
     
- plugins:
-  - search
-  - minify:
-    minify_html: true
-
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -51,6 +46,13 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - toc:
       permalink: true
+
+ plugins:
+  - search
+  - minify:
+    minify_html: true
+  - cards:
+      dev: false
 
 nav:
   - Home: index.md
@@ -74,3 +76,9 @@ extra:
 # Stabiler Import für Mermaid
 extra_javascript:
   - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+  
+theme:
+  name: material
+  features:
+    - content.code.copy
+    - navigation.top
