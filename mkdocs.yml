@@ -1,38 +1,76 @@
 site_name: IT-Virtuoso Knowledge Base
 site_url: https://it-virtuoso.de
-repo_url: https://github.com/rombey86/
+repo_url: https://github.com/rombey86/  # Repository-Link vervollständigt
+
 theme:
   name: material
   language: de
-  palette:
-    # Palette toggle for light mode
-    - scheme: default
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-
-    # Palette toggle for dark mode
+  logo: material/console       # Ein cooles Terminal-Logo
+  palette: 
+    # Dark Mode (Default)
     - scheme: slate
+      primary: deep orange
+      accent: deep orange
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+    # Light Mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  
   features:
     - navigation.instant
+    - navigation.tracking      # URL passt sich beim Scrollen an
+    - navigation.tabs          # Top-Level Menü oben (sieht moderner aus)
     - navigation.expand
-    - content.code.copy
+    - navigation.sections      # Gruppierung in der Sidebar
+    - navigation.top           # "Back to top" Button erscheint beim Scrollen
     - search.suggest
+    - search.highlight         # Gefundene Wörter werden markiert
+    - search.share             # Suchanfragen können geteilt werden
+    - content.code.copy
+    - content.code.annotate    # Erklärende Tooltips direkt im Code!
+    - content.tabs.link        # Tabs (z.B. für Linux/Windows Befehle) werden synchronisiert
 
 markdown_extensions:
   - admonition
+  - pymdownx.details           # Ausklappbare Info-Boxen (HTML <details>)
   - pymdownx.highlight:
       anchor_linenums: true
-  - pymdownx.superfences
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.mermaid_format
+  - pymdownx.inlinehilite       # Code-Highlighting mitten im Satz
+  - pymdownx.snippets           # Code aus externen Dateien einbetten
+  - pymdownx.tabbed:            # Tabs in Dokumenten (sehr cool für verschiedene Distributionen)
+      alternate_style: true 
   - toc:
       permalink: true
+      toc_depth: 3
 
+# Navigation: Hier habe ich die Struktur verfeinert
 nav:
-  - 'Home': 'index.md'
-  - 'Linux & Server': 'linux/ssh-hardening.md' # Placeholder
-  - 'Container & Cloud': 'container/index.md'  # Placeholder
-  - 'Smart Home': 'smarthome/index.md'      # Placeholder
-  - 'Über mich': 'about.md'                # Placeholder
+  - Home: index.md
+  - Linux & Server: 
+      - Übersicht: linux/index.md
+      - SSH Hardening: linux/ssh-hardening.md
+  - Container & Cloud:
+      - Übersicht: container/index.md
+  - Smart Home:
+      - Übersicht: smarthome/index.md
+  - Über mich: about.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/rombey86
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/tobias-rombey-76848048/
