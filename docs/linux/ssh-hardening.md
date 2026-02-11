@@ -36,6 +36,7 @@ graph TD
     C --> D[Webserver]
     C --> E[Datenbank]
     C --> F[Home Automation]
+```
 Nach den Änderungen müssen Sie den SSH-Dienst neu starten, um die Konfiguration zu übernehmen:
 
 ```bash
