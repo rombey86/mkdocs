@@ -1,15 +1,15 @@
 site_name: IT-Virtuoso Knowledge Base
 site_url: https://it-virtuoso.de
-repo_url: https://github.com/rombey86/
+repo_url: https://github.com/rombey86/mkdocs
 edit_uri: edit/main/docs/
 
 theme:
   name: material
   language: de
+  custom_dir: overrides  # ZWINGEND NOTWENDIG für die Partner-Links im Footer
   icon:
     logo: material/console
   palette: 
-    # Slate (Dunkel) an erster Stelle erzwingt Darkmode beim Laden
     - scheme: slate
       primary: deep orange
       accent: deep orange
@@ -22,7 +22,6 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Zum dunklen Modus wechseln
-  
   features:
     - navigation.tracking
     - navigation.expand
@@ -32,8 +31,7 @@ theme:
     - search.highlight
     - content.code.copy
     - content.code.annotate
-    # navigation.instant bleibt aus, um JS-Konflikte zu vermeiden
-    
+
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -52,8 +50,8 @@ plugins:
   - search
   - minify:
       minify_html: true
-#  - cards:
-#      dev: false
+# - cards:      # Deaktiviert, bis Dependencies (Pillow/Cairo) installiert sind
+#     dev: false
 
 nav:
   - Home: index.md
@@ -66,7 +64,7 @@ nav:
   - Smart Home:
       - Übersicht: smarthome/index.md
   - Über mich: about.md
-  
+
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -86,7 +84,9 @@ extra:
     - name: "van de Wetering"
       href: "https://www.pulverbeschichtung-nrw.com"
       title: "Pulverbeschichtung NRW"
-    
-# Stabiler Import für Mermaid
+
+extra_css:
+  - stylesheets/extra.css  # Lädt das Styling für die Partner-Links
+
 extra_javascript:
   - https://unpkg.com/mermaid@10/dist/mermaid.min.js
