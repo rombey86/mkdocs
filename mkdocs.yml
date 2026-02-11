@@ -47,12 +47,12 @@ markdown_extensions:
   - toc:
       permalink: true
 
- plugins:
+plugins:
   - search
   - minify:
-    minify_html: true
+      minify_html: true
   - cards:
-    dev: false
+      dev: false
 
 nav:
   - Home: index.md
@@ -76,9 +76,3 @@ extra:
 # Stabiler Import für Mermaid
 extra_javascript:
   - https://unpkg.com/mermaid@10/dist/mermaid.min.js
-  
-theme:
-  name: material
-  features:
-    - content.code.copy
-    - navigation.top
