@@ -1,31 +1,40 @@
-name: Publish to Cloudflare Pages
+name: Deploy to Cloudflare Pages
 
 on:
   push:
     branches:
-      - main
-      - master
+      - main  # oder 'master', je nachdem wie dein Hauptbranch heißt
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    name: Deploy to Cloudflare Pages
+    permissions:
+      contents: read
+      deployments: write
+
     steps:
-      - uses: actions/checkout@v4
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
-          python-version: 3.x
-      - name: Install dependencies
+          python-version: '3.x'
+
+      - name: Install Dependencies
         run: |
           pip install -r requirements.txt
-      - name: Build with MkDocs
+          # Falls requirements leer war, sicherheitshalber:
+          pip install mkdocs-material
+
+      - name: Build Site
         run: mkdocs build
+        # Das erstellt den Ordner "site/"
+
       - name: Publish to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: 'it-virtuoso-kb' # !!! CHANGE THIS TO YOUR CLOUDFLARE PAGES PROJECT NAME !!!
-          directory: 'site'
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          # Der entscheidende Befehl: Lade den Ordner 'site' hoch
+          command: pages deploy site --project-name=it-virtuoso --commit-dirty=true
