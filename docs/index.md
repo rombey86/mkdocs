@@ -1,3 +1,6 @@
+---
+description: Die digitale Knowledge Base von IT-Virtuoso. Dokumentation und Best Practices zu Linux, Docker, Smart Home und IT-Infrastruktur.
+---
 # IT-Virtuoso Knowledge Base
 
 Willkommen auf meiner Wissensdatenbank und digitalen Visitenkarte.
