@@ -1,3 +1,6 @@
+---
+description: Home Assistant als zentrale Smart-Home-Steuerung. Fokus auf lokale Kontrolle, Zigbee-Netzwerke und intelligente Automatisierung.
+---
 # Smart Home: Das Herzstück Home Assistant
 
 Mein Smart Home basiert auf der Philosophie von **lokaler Kontrolle** und **maximaler Interoperabilität**. Anstatt auf isolierte Cloud-Lösungen der Hersteller zu setzen, fungiert **Home Assistant** als zentrales Betriebssystem für mein Zuhause.
