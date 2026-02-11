@@ -1,3 +1,6 @@
+---
+description: Schritt-für-Schritt Anleitung zur SSH-Härtung. Root-Login deaktivieren, Key-Authentifizierung erzwingen und Server absichern.
+---
 # SSH-Härtung: Ein grundlegendes Rezept
 
 Eine der ersten und wichtigsten Maßnahmen zur Absicherung eines neuen Linux-Servers ist die Härtung des SSH-Dienstes. Die Standardkonfiguration ist oft zu permissiv.
