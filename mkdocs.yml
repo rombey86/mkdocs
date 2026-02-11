@@ -44,10 +44,6 @@ markdown_extensions:
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.mermaid_format
   - pymdownx.inlinehilite       # Code-Highlighting mitten im Satz
   - pymdownx.snippets           # Code aus externen Dateien einbetten
   - pymdownx.tabbed:            # Tabs in Dokumenten (sehr cool für verschiedene Distributionen)
@@ -74,3 +70,5 @@ extra:
       link: https://github.com/rombey86
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/tobias-rombey-76848048/
+extra_javascript:
+  - https://unpkg.com/mermaid/dist/mermaid.min.js
