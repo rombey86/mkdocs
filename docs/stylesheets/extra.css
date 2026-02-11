@@ -1,0 +1,10 @@
+/* Partner-Links im Footer stylen */
+.md-footer-copyright__highlight a {
+  color: var(--md-typeset-color);
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.md-footer-copyright__highlight a:hover {
+  color: var(--md-accent-fg-color); /* Nutzt dein Deep Orange */
+}
