@@ -72,16 +72,16 @@ extra:
   status:
     new: Neu
   partners:
-    - name: "Camdata"
+    - name: "CAMDATA - Machen Sie mehr aus ihrer IT"
       href: "https://camdata.de"
       title: "CAMDATA - Machen Sie mehr aus ihrer IT"
-    - name: "HSE NRW"
+    - name: "Ingenieurbüro HSE NRW – Sicherheit, Gesundheit & Umwelt"
       href: "https://www.hse-nrw.de"
       title: "Ingenieurbüro HSE NRW – Sicherheit, Gesundheit & Umwelt"
     - name: "ZASS IT.Solutions"
       href: "https://zass.solutions"
       title: "ZASS IT.Solutions"
-    - name: "van de Wetering"
+    - name: "Pulverbeschichtung NRW van de Wetering"
       href: "https://www.pulverbeschichtung-nrw.com"
       title: "Pulverbeschichtung NRW"
 
