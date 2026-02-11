@@ -1,4 +1,6 @@
-
+---
+description: Übersicht und Anleitungen zur Linux-Administration, Server-Härtung und effizienten Infrastruktur-Lösungen.
+---
 # Linux & Server Administration
 
 Dieser Bereich meiner Knowledge Base widmet sich der Administration, Absicherung und Automatisierung von Linux-Systemen. Mein Fokus liegt auf stabilen, reproduzierbaren Konfigurationen und dem "Security by Design"-Prinzip.
