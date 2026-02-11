@@ -9,7 +9,7 @@ Der Prozess nutzt einen temporären DNS-TXT-Eintrag zur Validierung der Inhabers
 ```mermaid
 sequenceDiagram
     participant S as Ziel-Server (Certbot/acme.sh)
-    participant DNS as Eigener DNS-Server (BIND/PowerDNS)
+    participant DNS as Eigener DNS-Server (PowerDNS)
     participant LE as Let's Encrypt (ACME)
     
     S->>S: Erstellt CSR & Nonce
