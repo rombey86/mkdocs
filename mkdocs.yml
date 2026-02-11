@@ -4,23 +4,22 @@ repo_url: https://github.com/rombey86/  # Repository-Link vervollständigt
 
 theme:
   name: material
-  language: de
-  logo: material/console       # Ein cooles Terminal-Logo
   palette: 
-    # Dark Mode (Default)
+    # Dieser Block erzwingt Slate (Dunkel) als Standard
     - scheme: slate
       primary: deep orange
       accent: deep orange
       toggle:
         icon: material/brightness-4
-        name: Switch to light mode
-    # Light Mode
+        name: Zum hellen Modus wechseln
+    
+    # Dieser Block ist nur verfügbar, wenn man manuell umschaltet
     - scheme: default
       primary: indigo
       accent: indigo
       toggle:
         icon: material/brightness-7
-        name: Switch to dark mode
+        name: Zum dunklen Modus wechseln
   
   features:
     - navigation.instant
