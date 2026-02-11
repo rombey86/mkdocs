@@ -1,10 +1,38 @@
-.md-footer-copyright__highlight a {
-  color: var(--md-typeset-color);
-  font-weight: bold;
-  text-decoration: none;
-  transition: color 0.3s;
+/* --- Partner-Navigation im Footer --- */
+
+/* Der Container: Zentriert die Links */
+.partner-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Zentriert die gesamte Gruppe */
+  gap: 0; /* Wir steuern den Abstand über die Trenner */
+  margin-top: 0.5em;
 }
 
-.md-footer-copyright__highlight a:hover {
+/* Die Links selbst */
+.partner-nav a {
+  color: var(--md-typeset-color); /* Standard Textfarbe */
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+/* Hover-Effekt: Leuchtet in Deep Orange */
+.partner-nav a:hover {
   color: var(--md-accent-fg-color);
+}
+
+/* Der visuelle Trenner (Pipe |) NACH jedem Link */
+.partner-nav a::after {
+  content: "|";
+  display: inline-block;
+  margin: 0 12px; /* Abstand links und rechts vom Strich */
+  color: var(--md-default-fg-color--lighter); /* Etwas blasser als der Text */
+  font-weight: normal;
+  opacity: 0.5;
+}
+
+/* WICHTIG: Den Trenner beim allerletzten Link entfernen */
+.partner-nav a:last-child::after {
+  display: none;
 }
