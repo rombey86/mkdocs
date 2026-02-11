@@ -1,19 +1,20 @@
 site_name: IT-Virtuoso Knowledge Base
 site_url: https://it-virtuoso.de
-repo_url: https://github.com/rombey86/  # Repository-Link vervollständigt
+repo_url: https://github.com/rombey86/mkdocs
+edit_uri: edit/main/docs/
 
 theme:
   name: material
+  language: de
+  logo: material/console
   palette: 
-    # Dieser Block erzwingt Slate (Dunkel) als Standard
+    # Slate (Dunkel) an erster Stelle erzwingt Darkmode beim Laden
     - scheme: slate
       primary: deep orange
       accent: deep orange
       toggle:
         icon: material/brightness-4
         name: Zum hellen Modus wechseln
-    
-    # Dieser Block ist nur verfügbar, wenn man manuell umschaltet
     - scheme: default
       primary: indigo
       accent: indigo
@@ -22,36 +23,29 @@ theme:
         name: Zum dunklen Modus wechseln
   
   features:
-    - navigation.instant
-    - navigation.tracking      # URL passt sich beim Scrollen an
-    - navigation.tabs          # Top-Level Menü oben (sieht moderner aus)
+    - navigation.tracking
     - navigation.expand
-    - navigation.sections      # Gruppierung in der Sidebar
-    - navigation.top           # "Back to top" Button erscheint beim Scrollen
+    - navigation.sections
+    - navigation.top
     - search.suggest
-    - search.highlight         # Gefundene Wörter werden markiert
-    - search.share             # Suchanfragen können geteilt werden
+    - search.highlight
     - content.code.copy
-    - content.code.annotate    # Erklärende Tooltips direkt im Code!
-    - content.tabs.link        # Tabs (z.B. für Linux/Windows Befehle) werden synchronisiert
+    # navigation.instant bleibt aus, um JS-Konflikte zu vermeiden
 
 markdown_extensions:
   - admonition
-  - pymdownx.details           # Ausklappbare Info-Boxen (HTML <details>)
+  - pymdownx.details
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
-      pygments_lang_class: true
   - pymdownx.superfences:
-  - pymdownx.inlinehilite       # Code-Highlighting mitten im Satz
-  - pymdownx.snippets           # Code aus externen Dateien einbetten
-  - pymdownx.tabbed:            # Tabs in Dokumenten (sehr cool für verschiedene Distributionen)
-      alternate_style: true 
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - toc:
       permalink: true
-      toc_depth: 3
 
-# Navigation: Hier habe ich die Struktur verfeinert
 nav:
   - Home: index.md
   - Linux & Server: 
@@ -63,11 +57,6 @@ nav:
       - Übersicht: smarthome/index.md
   - Über mich: about.md
 
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/rombey86
-    - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/tobias-rombey-76848048/
+# Stabiler Import für Mermaid
 extra_javascript:
-  - https://unpkg.com/mermaid/dist/mermaid.min.js
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
