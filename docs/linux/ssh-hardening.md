@@ -26,7 +26,16 @@ UsePAM no # Falls Sie PAM nicht für SSH benötigen
 # Erlaube nur bestimmte Benutzer
 # AllowUsers user1 user2
 ```
+## Netzwerk-Topologie
+Hier siehst du, wie der Verkehrsfluss architektonisch aufgebaut ist:
 
+```mermaid
+graph TD
+    A[Remote Client] -->|Port 2222 / Key-Auth| B(Jump Host)
+    B --> C{Internes Netz}
+    C --> D[Webserver]
+    C --> E[Datenbank]
+    C --> F[Home Automation]
 Nach den Änderungen müssen Sie den SSH-Dienst neu starten, um die Konfiguration zu übernehmen:
 
 ```bash
