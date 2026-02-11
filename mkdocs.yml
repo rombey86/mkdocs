@@ -52,7 +52,7 @@ markdown_extensions:
   - minify:
     minify_html: true
   - cards:
-      dev: false
+    dev: false
 
 nav:
   - Home: index.md
