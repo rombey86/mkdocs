@@ -32,6 +32,11 @@ theme:
     - content.code.copy
     - content.code.annotate
     # navigation.instant bleibt aus, um JS-Konflikte zu vermeiden
+    
+ plugins:
+  - search
+  - minify:
+    minify_html: true
 
 markdown_extensions:
   - admonition
