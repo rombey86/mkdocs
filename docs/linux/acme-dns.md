@@ -1,7 +1,7 @@
 ---
 description: Schritt-für-Schritt Anleitung zur Let's Encrypt DNS-Challenge mit acme-dns und PowerDNS.
 ---
-# Let's Encrypt Wildcard-Zertifikate via ACME-DNS
+# Let's Encrypt Wildcard-Zertifikate
 
 Die DNS-01 Challenge ist die sauberste Methode, um SSL-Zertifikate zu generieren, besonders für interne Dienste im LAN oder für Wildcard-Zertifikate (`*.it-virtuoso.de`). Der große Vorteil: Der Webserver muss nicht über Port 80/443 aus dem Internet erreichbar sein.
 
@@ -27,6 +27,9 @@ sequenceDiagram
     LE->>S: Zertifikat wird ausgestellt
     S->>DNS: API-Update: Lösche TXT-Record (Cleanup)
 ```
+## Fortgeschrittene Delegierung mit acme-dns
+Eine architektonisch sauberere und sicherere Methode ist die Nutzung eines dedizierten acme-dns Dienstes. Anstatt deinem Webserver weitreichende API-Schreibrechte auf deine primäre PowerDNS-Zone zu gewähren, wird die Validierung auf ein isoliertes System delegiert. Dadurch bleibt dein autoritativer DNS-Server für externe Clients unangreifbar.
+
 ```mermaid
 sequenceDiagram
     participant S as Ziel-Server (Certbot)
