@@ -1,3 +1,6 @@
+---
+description: IT-Allrounder und Linux-Administrator aus Mönchengladbach. Erfahren in Systemadministration, Cloud-Technologien und Open-Source-Lösungen.
+---
 # Über mich
 
 Ich bin ein technisch versierter und breit interessierter IT-Allrounder. Es gibt kein Problem, das nicht lösbar ist, und ich stelle mich mit Vergnügen jeder Herausforderung.
