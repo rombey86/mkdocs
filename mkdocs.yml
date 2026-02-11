@@ -51,6 +51,7 @@ nav:
   - Linux & Server: 
       - Übersicht: linux/index.md
       - SSH Hardening: linux/ssh-hardening.md
+      - ACME DNS Challenge: linux/acme-dns.md
   - Container & Cloud:
       - Übersicht: container/index.md
   - Smart Home:
