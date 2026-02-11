@@ -30,6 +30,7 @@ theme:
     - search.suggest
     - search.highlight
     - content.code.copy
+    - content.code.annotate
     # navigation.instant bleibt aus, um JS-Konflikte zu vermeiden
 
 markdown_extensions:
@@ -57,7 +58,14 @@ nav:
   - Smart Home:
       - Übersicht: smarthome/index.md
   - Über mich: about.md
-
+  
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/rombey86
+  status:
+    new: Neu
+    
 # Stabiler Import für Mermaid
 extra_javascript:
   - https://unpkg.com/mermaid@10/dist/mermaid.min.js
