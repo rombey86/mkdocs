@@ -9,21 +9,21 @@ In meiner Infrastruktur dient Home Assistant als "Single Source of Truth". Alle 
 
 
 ```mermaid
-graph DT
-    HA[Home Assistant Core]
+graph TD
+    HA["Home Assistant Core"]
     
-    subgraph Protokolle
-        ZB((Zigbee))
-        MT((Matter / Thread))
-        WF((Wi-Fi / ESPHome))
-        MQ((MQTT))
+    subgraph Protokolle ["Protokolle"]
+        ZB(("Zigbee"))
+        MT(("Matter / Thread"))
+        WF(("Wi-Fi / ESPHome"))
+        MQ(("MQTT"))
     end
     
-    subgraph Hardware
-        S[(Sensoren)]
-        L[Beleuchtung]
-        H[Heizung]
-        M[Multimedia]
+    subgraph Hardware ["Hardware"]
+        S[("Sensoren")]
+        L["Beleuchtung"]
+        H["Heizung"]
+        M["Multimedia"]
     end
 
     ZB & MT & WF & MQ --> HA
