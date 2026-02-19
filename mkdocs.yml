@@ -61,6 +61,7 @@ nav:
       - ACME DNS Challenge: linux/acme-dns.md
   - AI:
       - Übersicht: ai/index.md
+      - Gemini Prompts: ai/gemini-prompts.md
   - Container & Cloud:
       - Übersicht: container/index.md
   - Smart Home:
