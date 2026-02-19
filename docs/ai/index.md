@@ -1,3 +1,6 @@
+---
+description: Alles rund um KI
+---
 Migrate the entire Next.js 15 application located in the "old-migration" folder to an Astro framework project located in the "new-migration" folder. Carefully transfer and adapt all components, pages, styles, configuration files, and dependencies to ensure feature parity and proper functionality in Astro.
 
 Steps:
