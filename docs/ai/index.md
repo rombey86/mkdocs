@@ -16,3 +16,5 @@ Provide a detailed migration plan listing the specific files and components migr
 
 
 https://github.com/YouMind-OpenLab/awesome-gemini-3-prompts#-view-in-web-gallery
+
+https://youmind.com/de-DE/gemini-3-prompts
