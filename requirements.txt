@@ -1,4 +1,6 @@
 mkdocs-material[built-in-plugins]
 mkdocs-minify-plugin
+mkdocs-rtd-dropdown
 pillow
 cairosvg
+
