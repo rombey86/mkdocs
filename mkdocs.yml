@@ -4,7 +4,7 @@ repo_url: https://github.com/rombey86/mkdocs
 edit_uri: edit/main/docs/
 
 theme:
-  name: material
+  name: 'rtd-dropdown'
   language: de
   custom_dir: overrides  # ZWINGEND NOTWENDIG für die Partner-Links im Footer
   icon:
