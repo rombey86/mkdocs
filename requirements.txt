@@ -1,6 +1,5 @@
 mkdocs-material[built-in-plugins]
 mkdocs-minify-plugin
-mkdocs-material-insiders
 pillow
 cairosvg
 
