@@ -11,8 +11,8 @@ theme:
     logo: material/console
   palette: 
     - scheme: slate
-      primary: deep orange
-      accent: deep orange
+      primary: indigo
+      accent: deep purple
       toggle:
         icon: material/brightness-4
         name: Zum hellen Modus wechseln
