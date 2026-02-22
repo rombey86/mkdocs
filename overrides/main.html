@@ -21,3 +21,23 @@ crossorigin="anonymous"
 async>
 </script>
 {% endblock %}
+
+{% block footer %}
+<aside class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div style="text-align: center; width: 100%;">
+<div style="font-size: 0.8rem; opacity: 0.7; margin-bottom: 0.5em; text-transform: uppercase; letter-spacing: 0.05em;">
+Netzwerk & Partner
+</div>
+<nav class="partner-nav">
+{% for partner in config.extra.partners %}
+<a href="{{ partner.href }}" title="{{ partner.title }}" target="_blank" rel="noopener">
+{{ partner.name }}
+</a>
+{% endfor %}
+</nav>
+</div>
+</div>
+</aside>
+{{ super() }}
+{% endblock %}
