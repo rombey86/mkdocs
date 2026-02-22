@@ -1,22 +1,22 @@
-{% extends "partials/footer.html" %}
-
-{% block footer_nav %}
-  {{ super() }}
+<footer class="md-footer">
+  {% if "navigation.footer" in features %}
+    {% include "partials/footer-nav.html" %}
+  {% endif %}
 
   {% if config.extra.partners %}
     <hr>
     <div class="md-footer-meta md-typeset">
       <div class="md-footer-meta__inner">
-        <div class="md-footer-social">
-          <nav class="partner-nav">
-            {% for partner in config.extra.partners %}
-              <a href="{{ partner.href }}" title="{{ partner.title }}" target="_blank" rel="noopener">
-                {{ partner.name }}
-              </a>
-            {% endfor %}
-          </nav>
-        </div>
+        <nav class="partner-nav">
+          {% for partner in config.extra.partners %}
+            <a href="{{ partner.href }}" title="{{ partner.title }}" target="_blank" rel="noopener">
+              {{ partner.name }}
+            </a>
+          {% endfor %}
+        </nav>
       </div>
     </div>
   {% endif %}
-{% endblock %}
+
+  {% include "partials/footer-meta.html" %}
+</footer>
