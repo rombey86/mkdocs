@@ -59,6 +59,15 @@ nav:
       - Übersicht: linux/index.md
       - SSH Hardening: linux/ssh-hardening.md
       - ACME DNS Challenge: linux/acme-dns.md
+  - MacOS:
+      - Übersicht Ojective-See: macOS/objective-see.md
+      - Lulu: macOS/lulu.md
+      - BlockBlock: macOS/blockblock.md
+      - OverSight: macOS/oversight.md
+      - KnockKnock: macOS/knockknock.md
+      - RansomWhere?: macOS/ransomwhere.md
+      - What’s Your Sign?: macOS/whatsyoursight.md
+      - KextViewr: macOS/kextviewr.md
   - AI:
       - Übersicht: ai/index.md
       - Gemini Prompts: ai/gemini-prompts.md
