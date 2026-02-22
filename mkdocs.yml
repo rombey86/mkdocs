@@ -6,7 +6,7 @@ edit_uri: edit/main/docs/
 theme:
   name: 'material'
   language: de
-  custom_dir: overrides  # ZWINGEND NOTWENDIG für die Partner-Links im Footer
+  custom_dir: overrides
   icon:
     logo: material/console
   palette: 
@@ -22,6 +22,9 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Zum dunklen Modus wechseln
+  font:
+    text: Roboto
+    code: Roboto Mono
   features:
     - navigation.tracking
     - navigation.expand
@@ -34,10 +37,17 @@ theme:
 
 markdown_extensions:
   - admonition
+  - attr_list # Wichtig für Bilder-Größen oder CSS-Klassen direkt im MD
+  - md_in_html # Erlaubt Markdown innerhalb von HTML-Tags (wichtig für overrides)
   - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true 
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
