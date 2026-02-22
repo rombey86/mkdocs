@@ -27,7 +27,7 @@ theme:
     code: Roboto Mono
   features:
     - navigation.tracking
-    - navigation.expand
+#    - navigation.expand
     - navigation.sections
     - navigation.top
     - search.suggest
