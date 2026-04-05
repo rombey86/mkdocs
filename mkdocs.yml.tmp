@@ -70,8 +70,6 @@ nav:
           - Übersicht: linux/index.md
           - SSH Hardening: linux/ssh-hardening.md
           - ACME DNS Challenge: linux/acme-dns.md
-          - Admin Essentials: linux/linux-admin-essentials.md
-          - Was passiert beim Tippen?: linux/what-happens-when-you-type-google.md
       - Container & Cloud:
           - Übersicht: container/index.md
   - 🍎 Apple Security:
