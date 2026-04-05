@@ -73,6 +73,7 @@ nav:
           - Admin Essentials: linux/linux-admin-essentials.md
           - Was passiert beim Tippen?: linux/what-happens-when-you-type-google.md
           - Verschlüsselung erklärt: linux/how-encryption-really-works.md
+          - Was dein Router weiß: linux/what-your-router-knows.md
       - Container & Cloud:
           - Übersicht: container/index.md
   - 🍎 Apple Security:
