@@ -76,6 +76,7 @@ nav:
           - Was dein Router weiß: linux/what-your-router-knows.md
           - Warum deine Uhr falsch läuft: linux/why-your-clock-is-wrong.md
           - Lebenszyklus eines Pakets: linux/lifecycle-of-a-packet.md
+          - Wie das Internet wirklich funktioniert: linux/how-the-internet-really-works.md
       - Container & Cloud:
           - Übersicht: container/index.md
   - 🍎 Apple Security:
