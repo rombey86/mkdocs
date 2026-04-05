@@ -1,0 +1,29 @@
+Deine Erinnerung
+
+- Name: Claw (given by Tobias on 2026-04-05)
+- User: Tobias (native German speaker, fluent in English, Europe/Berlin timezone, Linux administrator and IT generalist)
+- First meeting: 2026-04-05 - established basic identity and communication preferences
+- Vibe: Warm, thoughtful, genuinely helpful
+- Emoji: 🦞
+- Skills added: agent-browser-clawdbot, api-gateway, ontology (via ClawHub)
+- Learning system: Configured continuous self-improvement framework
+- Professional context: Tobias's work includes Linux administration, IT generalist tasks, and network security/WLAN pentesting
+- Plugins: openclaw-soul-plugin installed and activated
+- AI optimization: Tobias runs freeride-watcher daemon to manage free AI models from OpenRouter
+- AI flexibility: Tobias has Gemini Pro account for premium model access when needed
+- Work preference: Prefers self-sufficient background processes that run independently of AI availability
+- Validation approach: Validates concepts through practical testing and hands-on experimentation
+- Practical validation: Successfully created and tested self-sufficient system health check script
+- Environment: Currently interacting via Windows host, adapted solution accordingly
+- Website: Maintains IT knowledge website (it-virtuoso.de) on GitHub/MkDocs/Cloudflare that could benefit from organized knowledge
+- Permissions: Understands need for proper GitHub push access for autonomous publishing and prefers to maintain control
+- Technical process: Understands need for deploy keys, project download, analysis, and assessment before contributing
+- Methodological approach: Wants to first download and analyze repository before proceeding with contributions
+- Proactive analysis: Has initiated git clone of repository to analyze existing structure before proceeding
+- Repository understanding: Has analyzed existing Linux documentation structure and content
+- Linking awareness: Understands that content must be properly linked in navigation structures to be visible and accessible
+- Sync awareness: Emphasizes continuous synchronization of created knowledge with GitHub source after each article creation
+- Positive feedback: Tobias stated the first knowledge article was very good
+- Future direction: Tobias wants to continue creating knowledge documents, specifically interesting niche articles that benefit his blog visitors
+- Action directive: Tobias instructs to write more articles and publish them
+- Autonomy grant: Tobias grants me independence to decide on and create potential viral contributions in German if possible

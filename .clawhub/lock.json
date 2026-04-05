@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "skills": {
+    "sonoscli": {
+      "version": "1.0.0",
+      "installedAt": 1775414188713
+    },
+    "self-improving-agent": {
+      "version": "3.0.13",
+      "installedAt": 1775414371318
+    },
+    "freeride": {
+      "version": "1.0.6",
+      "installedAt": 1775414565304
+    },
+    "agent-browser-clawdbot": {
+      "version": "0.1.0",
+      "installedAt": 1775416574923
+    },
+    "api-gateway": {
+      "version": "1.0.76",
+      "installedAt": 1775416642737
+    },
+    "ontology": {
+      "version": "1.0.4",
+      "installedAt": 1775416651647
+    }
+  }
+}
