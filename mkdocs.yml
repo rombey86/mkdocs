@@ -82,6 +82,13 @@ nav:
           - Übersicht: container/index.md
           - Revolution: container/container-revolution.md
           - Revolution: container/container-revolution.md
+          - Container Logging & Monitoring: container/container-logging-monitoring.md
+          - Dockerfile Best Practices: container/dockerfile-best-practices.md
+          - Helm Best Practices: container/helm-best-practices.md
+          - Service and Ingress: container/service-and-ingress.md
+          - GitOps and Argo CD: container/gitops-and-argo-cd.md
+          - CI/CD für Container: container/ci-cd-github-actions.md
+          - Container Security Best Practices: container/container-security-best-practices.md
   - 🍎 Apple Security:
       - Übersicht Objective-See: macOS/objective-see.md
       - Tools:
