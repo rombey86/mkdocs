@@ -77,6 +77,7 @@ nav:
           - Warum deine Uhr falsch läuft: linux/why-your-clock-is-wrong.md
           - Lebenszyklus eines Pakets: linux/lifecycle-of-a-packet.md
           - Wie das Internet wirklich funktioniert: linux/how-the-internet-really-works.md
+          - Wie Passwörter gespeichert werden: linux/how-passwords-are-stored.md
       - Container & Cloud:
           - Übersicht: container/index.md
   - 🍎 Apple Security:
