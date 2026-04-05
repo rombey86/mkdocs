@@ -72,6 +72,7 @@ nav:
           - ACME DNS Challenge: linux/acme-dns.md
           - Admin Essentials: linux/linux-admin-essentials.md
           - Was passiert beim Tippen?: linux/what-happens-when-you-type-google.md
+          - Verschlüsselung erklärt: linux/how-encryption-really-works.md
       - Container & Cloud:
           - Übersicht: container/index.md
   - 🍎 Apple Security:
