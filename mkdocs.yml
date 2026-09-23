@@ -78,6 +78,7 @@ nav:
           - Lebenszyklus eines Pakets: linux/lifecycle-of-a-packet.md
           - Wie das Internet wirklich funktioniert: linux/how-the-internet-really-works.md
           - Wie Passwörter gespeichert werden: linux/how-passwords-are-stored.md
+          - ZStack Cloud auf KVM-Basis: linux/zstack-cloud.md
       - Container & Cloud:
           - Übersicht: container/index.md
           - Revolution: container/container-revolution.md
