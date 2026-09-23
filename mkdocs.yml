@@ -126,6 +126,9 @@ extra:
     - name: "Pulverbeschichtung NRW van de Wetering"
       href: "https://www.pulverbeschichtung-nrw.com"
       title: "Pulverbeschichtung NRW"
+    - name: "Byteknights UG"
+      href: "https://byteknights.de"
+      title: "Byteknights UG - Ausfallsichere B2B-Infrastrukturen"
 
 extra_css:
   - stylesheets/extra.css  # Lädt das Styling für die Partner-Links
