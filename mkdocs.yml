@@ -107,6 +107,7 @@ nav:
       - Smart Home:
           - Übersicht: smarthome/index.md
   - Über mich: about.md
+  - Kaarstivers: container/Kaarstivers.md
 extra:
   social:
     - icon: fontawesome/brands/github
